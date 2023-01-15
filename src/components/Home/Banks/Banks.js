@@ -12,12 +12,12 @@ const Banks = () => {
         <h2 className="text-[#19A526] text-2xl text-center font-medium">
           Our Remunerative <span className="text-[#FF8500]">Banks</span>
         </h2>
-        <div className="mt-6 flex items-center gap-6">
+        <div className="mt-6 flex items-center gap-10">
           <img className="w-10" src={company1} alt="" />
-          <img className="w-28" src={company2} alt="" />
-          <img className="w-14" src={company3} alt="" />
-          <img className="w-24" src={company4} alt="" />
-          <img className="w-20" src={company5} alt="" />
+          <img className="w-32" src={company2} alt="" />
+          <img className="w-16" src={company3} alt="" />
+          <img className="w-28" src={company4} alt="" />
+          <img className="w-24" src={company5} alt="" />
         </div>
       </div>
     </section>
