@@ -14,16 +14,18 @@ const Login = () => {
   };
 
   return (
-    <section className="h-[100vh] overflow-hidden">
+    <section className="">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
-        <div className="bg-green-500 relative">
-          <img src={shape} alt="" />
-          <div className="absolute left-1/2 translate-x-[-50%] bottom-5">
-            <img className="w-64" src={image} alt="" />
+        <div className="relative ">
+          <div className="h-[100vh] overflow-hidden lg:sticky top-0">
+            <img src={shape} alt="" />
+            <div className="absolute left-1/2 translate-x-[-50%] bottom-0">
+              <img className="w-64" src={image} alt="" />
+            </div>
           </div>
         </div>
 
-        <div className="mt-16">
+        <div className="py-14">
           <h2 className="text-4xl text-gray-600 mb-10 font-medium">Log in</h2>
           <form onSubmit={handleLogin}>
             {/* email input */}
@@ -36,13 +38,14 @@ const Login = () => {
                 type="email"
                 name="email"
                 placeholder="Your email"
+                required
               />
             </div>
             {/* password input */}
             <div className="relative">
               <label
                 className="block my-2 lg:mt-6 text-gray-600"
-                htmlFor="email"
+                htmlFor="password"
               >
                 Password
               </label>
@@ -51,6 +54,7 @@ const Login = () => {
                 type={showPassword ? "text" : "password"}
                 name="password"
                 placeholder="Your password"
+                required
               />
               <span
                 onClick={() => setShowPassword(!showPassword)}
@@ -108,7 +112,7 @@ const Login = () => {
           {/* create new account */}
           <div className="my-8">
             <p className="text-gray-500">
-              Don't have account?{" "}
+              Don't have an account?{" "}
               <Link className="text-[#006838] font-medium" to="/signup">
                 Create new account
               </Link>
