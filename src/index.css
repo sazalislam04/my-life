@@ -22,3 +22,13 @@ body {
 .image-container img:nth-child(1) {
   height: 32px;
 }
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0.65rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #19a526;
+  border-radius: 8px;
+}

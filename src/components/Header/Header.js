@@ -38,8 +38,12 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <div>
-          <img className="h-6" src={search} alt="" />
+        <div className="flex items-center relative">
+          <input
+            type="search"
+            className="border rounded-full py-1 px-3 text-sm focus:outline-none"
+          />
+          <img className="h-5 absolute right-2" src={search} alt="" />
         </div>
       </nav>
     </header>
