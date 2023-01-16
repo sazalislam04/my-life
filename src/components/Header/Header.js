@@ -9,8 +9,8 @@ import logo from "../../assets/logo/Logo.png";
 
 const Header = () => {
   return (
-    <header className="py-8 relative">
-      <nav className="container flex items-center justify-between">
+    <header className="py-8 relative ">
+      <nav className="container flex sticky items-center justify-between">
         <Link to="/" className="text-[#19A526] font-semibold text-xl">
           <img className="h-10" src={logo} alt="" />
         </Link>
