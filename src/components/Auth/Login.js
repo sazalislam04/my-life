@@ -104,7 +104,7 @@ const Login = () => {
               </button>
             </div>
             <div className="lg:w-9/12 w-full mt-4">
-              <button className="bg-[#19A526] text-white font-medium w-full py-3 hover:bg-[#058b13] transition duration-300 rounded-full">
+              <button className="bg-[#19A526] text-white font-medium w-full py-3 hover:bg-[#006838] transition duration-300 rounded-full">
                 Log In
               </button>
             </div>

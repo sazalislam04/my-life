@@ -16,76 +16,76 @@ import OverviewChart from "./OverviewChart";
 const Dashboard = () => {
   return (
     <section className="py-8">
-      <div className="container mx-auto flex gap-12 justify-between">
-        <div class="flex flex-col rounded w-64 bg-white custom-shadow">
+      <div className="container mx-auto flex gap-10 justify-between">
+        <div className="flex flex-col rounded-lg w-64 bg-white custom-shadow">
           <div className="bg-[#F1FBF2] h-24 p-5 py-7">
-            <div class="flex gap-1 items-center">
+            <div className="flex gap-1 items-center">
               <img
-                class="object-cover w-12 h-12 mx-2 rounded-full"
+                className="object-cover w-12 h-12 mx-2 rounded-full"
                 src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                 alt="avatar"
               />
               <div className="">
-                <h4 class="font-medium text-[#006838] text-lg">John Doe</h4>
-                <p class="text-xs font-medium text-gray-500">
+                <h4 className="font-medium text-[#006838] text-lg">John Doe</h4>
+                <p className="text-xs font-medium text-gray-500">
                   john@example.com
                 </p>
               </div>
             </div>
           </div>
-          <div class="flex flex-col justify-between flex-1 p-4 py-7">
+          <div className="flex flex-col justify-between flex-1 p-4 py-7">
             <nav>
-              <Link class="flex items-center px-4 py-2 rounded-lg text-[#FF8500]">
+              <Link className="flex items-center px-4 py-2 rounded-lg text-[#FF8500]">
                 <img src={menu} alt="" />
 
-                <span class="mx-4 font-medium">Dashboard</span>
+                <span className="mx-4 font-medium">Dashboard</span>
               </Link>
               {/* banking */}
               <div className="tracking-widest px-4 text-gray-500 mt-7">
                 Banking
               </div>
-              <Link class="flex items-center px-4 py-2 mt-4 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
+              <Link className="flex items-center px-4 py-2 mt-4 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
                 <img src={credit} alt="" />
 
-                <span class="mx-4 font-medium">My Accounts</span>
+                <span className="mx-4 font-medium">My Accounts</span>
               </Link>
-              <Link class="flex items-center px-4 py-2 mt-1 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
+              <Link className="flex items-center px-4 py-2 mt-1 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
                 <img src={savings} alt="" />
 
-                <span class="mx-4 font-medium">My Savings</span>
+                <span className="mx-4 font-medium">My Savings</span>
               </Link>
-              <Link class="flex items-center px-4 py-2 mt-1 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
+              <Link className="flex items-center px-4 py-2 mt-1 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
                 <img src={card} alt="" />
 
-                <span class="mx-4 font-medium">My Cards</span>
+                <span className="mx-4 font-medium">My Cards</span>
               </Link>
               {/* Insurance */}
               <div className="tracking-widest px-4 mt-5 text-gray-500 ">
                 Insurance
               </div>
-              <Link class="flex items-center px-4 py-2 mt-4 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
+              <Link className="flex items-center px-4 py-2 mt-4 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
                 <img src={home} alt="" />
 
-                <span class="mx-4 font-medium">My Home</span>
+                <span className="mx-4 font-medium">My Home</span>
               </Link>
-              <Link class="flex items-center px-4 py-2 mt-1 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
+              <Link className="flex items-center px-4 py-2 mt-1 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
                 <img src={mobility} alt="" />
 
-                <span class="mx-4 font-medium">My Mobility</span>
+                <span className="mx-4 font-medium">My Mobility</span>
               </Link>
-              <Link class="flex items-center px-4 py-2 mt-1 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
+              <Link className="flex items-center px-4 py-2 mt-1 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
                 <img src={travel} alt="" />
 
-                <span class="mx-4 font-medium">My Traveling</span>
+                <span className="mx-4 font-medium">My Traveling</span>
               </Link>
               {/* travel */}
               <div className="tracking-widest px-4 mt-5 text-gray-500 ">
                 Travel
               </div>
-              <Link class="flex items-center px-4 py-2 mt-1 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
+              <Link className="flex items-center px-4 py-2 mt-1 text-gray-500 transition-colors duration-300 transform rounded-lg hover:bg-gray-100">
                 <img src={booking} alt="" />
 
-                <span class="mx-4 font-medium">My Bookings</span>
+                <span className="mx-4 font-medium">My Bookings</span>
               </Link>
             </nav>
           </div>
@@ -95,17 +95,21 @@ const Dashboard = () => {
             <Activity />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-8">
-            <div className="custom-shadow  rounded-md col-span-3">
-              <h2 className="p-5 text-gray-500 font-medium px-6">
-                This Year Overview
-              </h2>
-              <OverviewChart />
+            <div className="col-span-3">
+              <div className="custom-shadow rounded-lg ">
+                <h2 className="p-5 text-gray-500 font-medium px-6">
+                  This Year Overview
+                </h2>
+                <OverviewChart />
+              </div>
+              <div className="custom-shadow rounded-lg mt-8">
+                <h2 className="p-5 text-gray-500 font-medium px-6">
+                  Insurance
+                </h2>
+                <InsuranceChart />
+              </div>
             </div>
-            <div className="custom-shadow  rounded-md col-span-3">
-              <h2 className="p-5 text-gray-500 font-medium px-6">Insurance</h2>
-              <InsuranceChart />
-            </div>
-            <div className="bg-yellow-500 col-span-1">
+            <div className="col-span-1 rounded-lg custom-shadow">
               <Card />
             </div>
           </div>

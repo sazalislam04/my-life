@@ -63,9 +63,9 @@ const Categories = () => {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative z-10">
         <div className="container">
-          <div className="lg:w-[88%] mx-auto pt-10">
+          <div className="lg:w-[88%] w-full mx-auto pt-10">
             <div className="grid grid-cols-1 z-50 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {categoriesItem?.map((category) => (
                 <Category key={category.id} category={category} />
@@ -79,7 +79,7 @@ const Categories = () => {
             <img className="w-60 object-cover" src={shape5} alt="" />
           </div>
         </div>
-        <div className=" right-32 -mt-20 absolute">
+        <div className="right-32 -mt-20 absolute">
           <img className="w-12 object-cover" src={shape6} alt="" />
         </div>
         <div className="absolute left-1/2 translate-x-[-1%, 20px] rotate-180 -mt-24">

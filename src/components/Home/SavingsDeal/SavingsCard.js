@@ -5,7 +5,6 @@ import shape2 from "../../../assets/others/Ellipse 526 (1).png";
 const SavingsCard = ({ saving }) => {
   const { img, amtsign, text_1, text_2, text_3, value_1, value_2, value_3 } =
     saving;
-
   return (
     <div className="bg-white custom-shadow rounded-lg ">
       <div className="p-6 relative overflow-hidden">
@@ -14,8 +13,10 @@ const SavingsCard = ({ saving }) => {
         </div>
         <div className="flex mt-8 justify-between text-sm text-gray-600">
           <p>{text_1}:</p>
-          <p className="font-medium text-gray-900">{value_1}</p>
-          <img className="h-4 object-cover" src={amtsign} alt="" />
+          <div className="flex items-center gap-2">
+            <p className="font-medium text-gray-900">{value_1}</p>
+            <img className="h-[13px] object-cover" src={amtsign} alt="" />
+          </div>
         </div>
         <div className="flex py-1 justify-between text-sm text-gray-600">
           <p>{text_2}:</p>

@@ -17,7 +17,7 @@ const Category = ({ category }) => {
 
   return (
     <div className="bg-white custom-shadow rounded-lg z-50">
-      <img src={img} alt="" />
+      <img className="w-full" src={img} alt="" />
       <div className="p-8 text-lg">
         <h2 className="text-[#FF8500] tracking-wider uppercase">{heading}</h2>
         <div className="flex gap-1 items-center mt-3">

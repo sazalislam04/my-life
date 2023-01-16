@@ -5,7 +5,7 @@ import Header from "../components/Header/Header";
 const DashboardLayout = () => {
   return (
     <div>
-      <div className="shadow">
+      <div className="custom-shadow">
         <Header />
       </div>
       <Outlet />

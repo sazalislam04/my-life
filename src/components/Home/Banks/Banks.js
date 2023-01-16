@@ -12,7 +12,7 @@ const Banks = () => {
         <h2 className="text-[#19A526] text-2xl text-center font-medium">
           Our Remunerative <span className="text-[#FF8500]">Banks</span>
         </h2>
-        <div className="mt-6 flex items-center gap-10">
+        <div className="mt-6 flex flex-wrap px-2 justify-center items-center gap-4 lg:gap-10">
           <img className="w-10" src={company1} alt="" />
           <img className="w-32" src={company2} alt="" />
           <img className="w-16" src={company3} alt="" />

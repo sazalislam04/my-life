@@ -1,5 +1,6 @@
 import React from "react";
 import sign from "../assets/others/Vector 565 (1).png";
+import sign2 from "../assets/others/Vector 565 (2).png";
 
 import {
   Bar,
@@ -68,9 +69,9 @@ const InsuranceChart = () => {
           </span>
         </div>
         <div className="mt-5 rounded-md h-20 w-48 p-4 bg-[#FFF4E7] ">
-          <div className="text-[#19A526] flex items-center gap-1">
-            <img src={sign} alt="" />
-            <span>23,45,000</span>
+          <div className="text-[#FF8500] flex items-center gap-1">
+            <img src={sign2} alt="" />
+            <span>75,000</span>
           </div>
           <span className="text-xs font-medium text-gray-500">
             Total Insurance cost

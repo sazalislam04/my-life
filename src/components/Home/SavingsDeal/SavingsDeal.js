@@ -46,7 +46,7 @@ const SavingsDeal = () => {
   return (
     <section className="mt-20 py-12">
       <div className="container">
-        <div className="lg:w-[88%] mx-auto">
+        <div className="lg:w-[88%] w-full mx-auto">
           <div className="flex justify-between items-center">
             <h2 className="text-[28px] text-gray-600 font-medium">
               Our Savings Deal

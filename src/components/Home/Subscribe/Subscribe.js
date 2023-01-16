@@ -9,7 +9,7 @@ const Subscribe = () => {
   };
 
   return (
-    <section className="bg-[#19A526] h-96 text-center py-28 relative">
+    <section className="bg-[#19A526] px-4 h-96 text-center py-28 relative">
       <div>
         <h2 className="text-white text-4xl mb-2">Get In Touch</h2>
         <p className="text-white">
@@ -17,12 +17,12 @@ const Subscribe = () => {
         </p>
         <form onSubmit={handleSubmit} className="py-6">
           <input
-            className="px-6 h-[48px] w-80 rounded-tl-full focus:outline-none text-sm rounded-bl-full"
+            className="px-6 h-[48px] w-48 sm:w-72 lg:w-80 rounded-tl-full focus:outline-none text-sm rounded-bl-full"
             type="email"
             placeholder="Your email"
           />
           <input
-            className="px-5 h-[48px] text-white cursor-pointer bg-[#FF8500] rounded-tr-full rounded-br-full"
+            className="px-2 sm:px-5 h-[48px] text-white cursor-pointer bg-[#FF8500] rounded-tr-full rounded-br-full"
             type="submit"
             value="Subscribe"
           />
