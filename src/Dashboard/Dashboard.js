@@ -10,7 +10,8 @@ import travel from "../assets/icons/Property 1=Plane.png";
 import savings from "../assets/icons/Property 1=Savings.png";
 import Activity from "./Activity";
 import Card from "./Card";
-import Chart from "./Chart";
+import InsuranceChart from "./InsuranceChart";
+import OverviewChart from "./OverviewChart";
 
 const Dashboard = () => {
   return (
@@ -98,7 +99,11 @@ const Dashboard = () => {
               <h2 className="p-5 text-gray-500 font-medium px-6">
                 This Year Overview
               </h2>
-              <Chart />
+              <OverviewChart />
+            </div>
+            <div className="custom-shadow  rounded-md col-span-3">
+              <h2 className="p-5 text-gray-500 font-medium px-6">Insurance</h2>
+              <InsuranceChart />
             </div>
             <div className="bg-yellow-500 col-span-1">
               <Card />

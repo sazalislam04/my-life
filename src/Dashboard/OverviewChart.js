@@ -88,14 +88,15 @@ const Chart = () => {
   return (
     <div className="p-4">
       <LineChart width={560} height={300} data={data}>
-        <CartesianGrid strokeDasharray="1 2" />
+        <CartesianGrid strokeDasharray="1 1" />
         <XAxis
           strokeDasharray="1 2"
           style={{ fontSize: "14px" }}
           stroke="#d1d5db"
           dataKey="name"
+          tickMargin={8}
         />
-        <YAxis strokeDasharray="1 2" stroke="#d1d5db" />
+        <YAxis strokeDasharray="1 1" stroke="#d1d5db" />
         <Tooltip />
         <Legend />
         <Line type="monotone" dataKey="TotalRevenue" stroke="#19A526" />
