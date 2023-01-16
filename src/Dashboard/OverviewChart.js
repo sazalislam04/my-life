@@ -86,7 +86,7 @@ const Chart = () => {
   ];
 
   return (
-    <div className="p-4">
+    <div className="p-4 md:w-full" style={{ width: "100%", height: "100%" }}>
       <LineChart width={560} height={300} data={data}>
         <CartesianGrid strokeDasharray="1 1" />
         <XAxis

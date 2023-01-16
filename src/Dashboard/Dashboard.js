@@ -16,8 +16,8 @@ import OverviewChart from "./OverviewChart";
 const Dashboard = () => {
   return (
     <section className="py-8">
-      <div className="container mx-auto flex gap-10 justify-between">
-        <div className="flex flex-col rounded-lg w-64 bg-white custom-shadow">
+      <div className="container mx-auto md:flex gap-10 justify-between">
+        <div className="flex flex-col rounded-lg w-full md:w-96 lg:w-64 bg-white custom-shadow">
           <div className="bg-[#F1FBF2] h-24 p-5 py-7">
             <div className="flex gap-1 items-center">
               <img
@@ -90,7 +90,7 @@ const Dashboard = () => {
             </nav>
           </div>
         </div>
-        <div className="w-full lg:w-9/12">
+        <div className="w-full mt-8 md:mt-0 lg:w-9/12">
           <div>
             <Activity />
           </div>
@@ -109,7 +109,7 @@ const Dashboard = () => {
                 <InsuranceChart />
               </div>
             </div>
-            <div className="col-span-1 rounded-lg custom-shadow">
+            <div className="col-span-3 lg:col-span-1 rounded-lg custom-shadow">
               <Card />
             </div>
           </div>
